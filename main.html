@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>checkersmate.io</title>
+</head>
+<body>
+  <section id="top">
+    <button onclick="reloadWindow()"> <h1> checkersmate.io </h1></button>
+    <h4>play with people from all over the world</h4>
+  </section>
+  <section id="Middle">
+    <form action="http://localhost:63342/myapp/public/play.html?_ijt=ocvbsoo4aus0b5n1jojetkforu" method="get">
+      <button type="submit">PLAY</button>
+    </form>
+    <button onclick="closeWindow()">QUIT</button>
+  </section>
+  <section id="bottom">
+    <form action="https://en.wikipedia.org/wiki/Draughts" method="get">
+      <button type="submit">HOW TO PLAY</button>
+    </form>
+    <form action="/stats" method="get">
+      <button type="submit">YOUR STATS</button>
+    </form>
+  </section>
+<script>
+  function closeWindow(){
+    window.location.close();
+  }
+
+  function reloadWindow() {
+    window.location.reload();
+  }
+</script>
+</body>
+</html>
